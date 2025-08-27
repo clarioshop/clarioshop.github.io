@@ -1,176 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Clario - Pricing</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-<style>
-  body {
-    margin: 0;
-    font-family: 'Inter', sans-serif;
-    background: linear-gradient(to top, #000020, #000033);
-    color: #fff;
-    line-height: 1.6;
-  }
-
-  /* Navbar */
-  nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: rgba(0,0,0,0.8);
-    padding: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
-    backdrop-filter: blur(6px);
-  }
-
-  nav .links {
-    display: flex;
-    gap: 20px;
-  }
-
-  nav a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 0.95rem;
-    transition: color 0.3s;
-  }
-
-  nav a:hover {
-    color: #4da6ff;
-  }
-
-  /* Search bar */
-  .search-bar input {
-    padding: 6px 10px;
-    border-radius: 6px;
-    border: none;
-    outline: none;
-    font-size: 0.9rem;
-  }
-
-  /* Container */
-  .container {
-    max-width: 1000px;
-    margin: 100px auto 50px auto;
-    padding: 20px;
-    text-align: center;
-  }
-
-  h1 {
-    font-size: 2rem;
-    margin-bottom: 30px;
-  }
-
-  /* Cards grid */
-  .card-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
-  }
-
-  .card {
-    background: rgba(255,255,255,0.05);
-    padding: 20px;
-    border-radius: 12px;
-    text-align: left;
-    transition: transform 0.3s, box-shadow 0.3s;
-  }
-
-  .card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 8px 16px rgba(0,0,0,0.5);
-  }
-
-  .card h2 {
-    font-size: 1.3rem;
-    margin-bottom: 10px;
-    color: #4da6ff;
-  }
-
-  .card p {
-    font-size: 0.9rem;
-    margin-bottom: 15px;
-  }
-
-  .price {
-    font-weight: bold;
-    font-size: 1rem;
-    color: #00ff99;
-  }
-
-  .tag {
-    display: inline-block;
-    margin-top: 8px;
-    padding: 4px 10px;
-    background: #ff4444;
-    border-radius: 6px;
-    font-size: 0.8rem;
-    font-weight: 600;
-  }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clario | Pricing</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #0a0f1c;
+      color: #eaeaea;
+      margin: 0;
+      padding: 0;
+    }
+    nav {
+      background: #111827;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav a {
+      color: #eaeaea;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #60a5fa;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 2rem auto;
+      padding: 1rem;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 2rem;
+      font-size: 2rem;
+    }
+    .search-bar {
+      text-align: right;
+      margin-bottom: 1.5rem;
+    }
+    .search-bar input {
+      padding: 0.5rem;
+      border-radius: 5px;
+      border: none;
+      width: 250px;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: #1f2937;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+      transition: transform 0.2s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card h3 {
+      margin-top: 0;
+      font-size: 1.3rem;
+      color: #60a5fa;
+    }
+    .price {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin: 0.5rem 0;
+    }
+    .more-btn {
+      background: #2563eb;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      color: #fff;
+      font-size: 0.9rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .more-btn:hover {
+      background: #1e40af;
+    }
+    .details {
+      margin-top: 1rem;
+      display: none;
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+  </style>
 </head>
 <body>
-<nav>
-  <div class="links">
-    <a href="index.html">Home</a>
-    <a href="pricing.html">Pricing</a>
-    <a href="terms.html">Terms</a>
-    <a href="contact.html">Contact</a>
-  </div>
-  <div class="search-bar">
-    <input type="text" id="search" placeholder="Search eBooks...">
-  </div>
-</nav>
+  <nav>
+    <div class="logo"><a href="index.html">Clario</a></div>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="contact.html">Contact</a>
+      <a href="terms.html">Terms</a>
+    </div>
+  </nav>
 
-<div class="container">
-  <h1>Our Digital Products</h1>
+  <div class="container">
+    <h1>Our Products</h1>
 
-  <div class="card-grid" id="cardGrid">
-    <div class="card" data-keywords="thinking clarity philosophy">
-      <h2>Rewired Thinking</h2>
-      <p>How to break assumptions and see clearly in a noisy world.</p>
-      <p class="price">$29</p>
-      <span class="tag">Coming Soon</span>
+    <div class="search-bar">
+      <input type="text" placeholder="Search for ebooks...">
     </div>
 
-    <div class="card" data-keywords="digital wisdom technology humanity">
-      <h2>Digital Wisdom</h2>
-      <p>A practical guide to thriving at the crossroads of technology and humanity.</p>
-      <p class="price">$35</p>
-      <span class="tag">Coming Soon</span>
-    </div>
+    <div class="cards">
+      <!-- Product 1 -->
+      <div class="card">
+        <h3>The Digital Mindset: Thinking Smarter in the Tech Era</h3>
+        <p class="price">$19</p>
+        <button class="more-btn" onclick="toggleDetails(this)">More about this product</button>
+        <div class="details">
+          <p>A 70-page practical guide exploring how psychology, philosophy, and technology shape modern decision-making. Includes actionable strategies, exercises, and real-world examples.</p>
+          <ul>
+            <li>📘 Format: PDF eBook</li>
+            <li>⏱ Instant access after purchase</li>
+            <li>✅ Lifetime access</li>
+          </ul>
+        </div>
+      </div>
 
-    <div class="card" data-keywords="psychology strategy decisions success">
-      <h2>The Strategic Mindset</h2>
-      <p>Simple psychology tools to make smarter life & business decisions.</p>
-      <p class="price">$39</p>
-      <span class="tag">Coming Soon</span>
+      <!-- Product 2 -->
+      <div class="card">
+        <h3>Breaking Mental Loops: Overcoming Overthinking</h3>
+        <p class="price">$15</p>
+        <button class="more-btn" onclick="toggleDetails(this)">More about this product</button>
+        <div class="details">
+          <p>This book helps readers escape the trap of endless overthinking and make smarter, faster decisions. Includes exercises to build clarity, focus, and confidence.</p>
+          <ul>
+            <li>📘 Format: PDF eBook</li>
+            <li>📂 Bonus: 3 guided worksheets</li>
+            <li>✅ Lifetime access</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="card">
+        <h3>Practical Philosophy: Stoicism for Modern Living</h3>
+        <p class="price">$22</p>
+        <button class="more-btn" onclick="toggleDetails(this)">More about this product</button>
+        <div class="details">
+          <p>An in-depth look at Stoic philosophy with practical lessons for everyday challenges, stress management, and resilience in the digital age.</p>
+          <ul>
+            <li>📘 Format: PDF eBook</li>
+            <li>🎧 Bonus: Audio summary included</li>
+            <li>⏱ Instant access after purchase</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
-</div>
 
-<script>
-  const searchInput = document.getElementById('search');
-  const cards = document.querySelectorAll('.card');
-
-  searchInput.addEventListener('input', () => {
-    const query = searchInput.value.toLowerCase();
-    cards.forEach(card => {
-      const keywords = card.getAttribute('data-keywords');
-      if (keywords.toLowerCase().includes(query)) {
-        card.style.display = 'block';
+  <script>
+    function toggleDetails(button) {
+      const details = button.nextElementSibling;
+      if (details.style.display === "block") {
+        details.style.display = "none";
+        button.textContent = "More about this product";
       } else {
-        card.style.display = 'none';
+        details.style.display = "block";
+        button.textContent = "Hide details";
       }
-    });
-  });
-</script>
+    }
+  </script>
 </body>
 </html>
